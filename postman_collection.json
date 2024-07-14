@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "8da774ef-1cf8-478a-a08c-5ab47eef6c94",
+		"name": "poc bff",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27995187",
+		"_collection_link": "https://warped-meteor-505060.postman.co/workspace/2e08b4ab-6a41-4ce9-80ef-eb1b2adc93e5/collection/27995187-8da774ef-1cf8-478a-a08c-5ab47eef6c94?action=share&source=collection_link&creator=27995187"
+	},
+	"item": [
+		{
+			"name": "claims",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikh0aTZmRDl6RTNyUVBMMDF5aHh4WSJ9.eyJlbWFpbCI6Inlvc2VseW4uY2FydGVzQGNtcGMuY2wiLCJlbnZpcm9ubWVudCI6ImRldmVsb3BtZW50IiwibmFtZSI6Inlvc2VseW4uY2FydGVzQGNtcGMuY2wiLCJpc3MiOiJodHRwczovL2F1dGgtYW5ndWxhci1tYWRlcmEtZGV2LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2Njg1NzA5MjA4ODM2ZjBhMzE4YWRmZjQiLCJhdWQiOlsibWFkZXJhcy1hcGkiLCJodHRwczovL2F1dGgtYW5ndWxhci1tYWRlcmEtZGV2LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MjA4NzUxMjIsImV4cCI6MTcyMDk2MTUyMiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6ImFlb1lxTzVrT3huUFlHVzhIZ1ljOFp1ZHJKOXU2ZjhxIn0.iw1Ky63jyj31Jpgr169QzD0tXFsvgqK9pl9SSiZa_canPcRXxFXnUjHAdkd2fZKM_Sz3qK6rzA50pl_8ZfJiNTs4hTwpT6L1nxjEDxpejkQPYJj1GVYKEzw7mTgkZn8x5CcBI_v9_eTEugOvtEyTaTZqcLM2cOdIJiOg56Toymq12jjjR2WrboXsM6LRoBznECE7vT5u3oS88_EwTOOjuKmxVVoSwD0kuv5rgvD7bWofjf0DbEFvBwjDNrmgjq4sjVv3TEExMdIbt7ftPzhYy-2WxEMY0-7a3i4CYViwfLnefleaovi48cHCMDM4N_sxfVYItq7eZnmo2MuopaPPeA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{HOST}}:{{PORT}}/{{PATH_PREFIX}}/claims",
+							"protocol": "http",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"{{PATH_PREFIX}}",
+								"claims"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4lljlk",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BAD hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/{{PATH_PREFIX}}/hello/auth",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"{{PATH_PREFIX}}",
+						"hello",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OK hello",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikh0aTZmRDl6RTNyUVBMMDF5aHh4WSJ9.eyJlbWFpbCI6Inlvc2VseW4uY2FydGVzQGNtcGMuY2wiLCJlbnZpcm9ubWVudCI6ImRldmVsb3BtZW50IiwibmFtZSI6Inlvc2VseW4uY2FydGVzQGNtcGMuY2wiLCJpc3MiOiJodHRwczovL2F1dGgtYW5ndWxhci1tYWRlcmEtZGV2LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2Njg1NzA5MjA4ODM2ZjBhMzE4YWRmZjQiLCJhdWQiOlsibWFkZXJhcy1hcGkiLCJodHRwczovL2F1dGgtYW5ndWxhci1tYWRlcmEtZGV2LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MjA4NzUxMjIsImV4cCI6MTcyMDk2MTUyMiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6ImFlb1lxTzVrT3huUFlHVzhIZ1ljOFp1ZHJKOXU2ZjhxIn0.iw1Ky63jyj31Jpgr169QzD0tXFsvgqK9pl9SSiZa_canPcRXxFXnUjHAdkd2fZKM_Sz3qK6rzA50pl_8ZfJiNTs4hTwpT6L1nxjEDxpejkQPYJj1GVYKEzw7mTgkZn8x5CcBI_v9_eTEugOvtEyTaTZqcLM2cOdIJiOg56Toymq12jjjR2WrboXsM6LRoBznECE7vT5u3oS88_EwTOOjuKmxVVoSwD0kuv5rgvD7bWofjf0DbEFvBwjDNrmgjq4sjVv3TEExMdIbt7ftPzhYy-2WxEMY0-7a3i4CYViwfLnefleaovi48cHCMDM4N_sxfVYItq7eZnmo2MuopaPPeA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}:{{PORT}}/{{PATH_PREFIX}}/hello/private",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"{{PATH_PREFIX}}",
+						"hello",
+						"private"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{PORT}}/b2b/hello/public",
+					"host": [
+						"localhost"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"b2b",
+						"hello",
+						"public"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
