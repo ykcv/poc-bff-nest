@@ -24,4 +24,4 @@ npm run test
 
 ## Author
 
-👤 **Yoselyn C Velaquez**
+👤 **ykcv**
